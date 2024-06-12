@@ -4,7 +4,9 @@
 
 The Discord AI Chatbot is a powerful, interactive bot designed to enhance your Discord server experience with advanced AI capabilities. This bot leverages the latest in language model technology to provide a wide range of features, from command handling and image generation to secure credential management and web access. It aims to streamline interactions, provide useful functionalities, and create a more engaging environment for Discord users.
 
-![Project Image Overview](https://github.com/zima-0201/Project-Images/blob/main/Discord-AI-ChatBot.jpg)
+## Video Preview
+
+[![Video Preview](https://github.com/zima-0201/Project-Images/blob/main/video%20preview/Discord-AI-ChatBot.jpg)](https://brand-car.s3.eu-north-1.amazonaws.com/Four+Seasons/Py-Discord-AI-ChatBot.mp4)
 
 ### Core Features
 
