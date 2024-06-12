@@ -6,10 +6,8 @@ from ..common import current_language
 import discord
 from discord.ext import commands
 
-import aiohttp
 import asyncio
 import random
-from bot_utilities.ai_utils import poly_image_gen, generate_image_prodia
 from prodia.constants import Model
 from ..common import blacklisted_words
 
@@ -46,7 +44,7 @@ class NekoCog(commands.Cog):
                 embed = discord.Embed(colour=0x141414)
                 embed.set_image(url=image_url)
                 await ctx.send(embed=embed)
-    @commands.guild_only()        
+                
     @commands.hybrid_command(name="imagine-pollinations", description="Bring your imagination into reality with pollinations.ai!")
     @discord.app_commands.describe(images="Choose the amount of your image.")
     @discord.app_commands.describe(prompt="Provide a description of your imagination to turn them into image.")
@@ -106,7 +104,6 @@ class NekoCog(commands.Cog):
         sampler="Sampler for denosing",
         negative="Prompt that specifies what you do not want the model to generate",
     )
-    @commands.guild_only()
     async def imagine(self, ctx, prompt: str, model: discord.app_commands.Choice[str], sampler: discord.app_commands.Choice[str], negative: str = None, seed: int = None):
         for word in prompt.split():
             is_nsfw = word in blacklisted_words
